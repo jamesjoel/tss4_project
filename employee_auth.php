@@ -5,11 +5,11 @@ include('db.php');
 $u=$_POST['username'];
 $p=$_POST['pass'];
 $que="SELECT * FROM employee WHERE username='$u'";
-$result=mysql_query($que);
+$result=mysqli_query($con, $que);
 
-if(mysql_num_rows($result)==1)
+if(mysqli_num_rows($result)==1)
 {
-	$data = mysql_fetch_assoc($result);
+	$data = mysqli_fetch_assoc($result);
 	
 	if($data['password']==$p)
 	{

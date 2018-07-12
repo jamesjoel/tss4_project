@@ -11,6 +11,6 @@ $f=$_POST['contact'];
 
 $que="INSERT INTO employee (full_name, username, password, address, city, contact) VALUES ('$a', '$b', '$c', '$d', '$e', '$f')";
 
-mysql_query($que);
+mysqli_query($con, $que);
 header("location:employee_login.php");
 ?>

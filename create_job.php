@@ -24,6 +24,8 @@ if(! isset($_SESSION['is_company_logged_in'])) // Backdoor Entry Protaction Code
 							<option>Marketing</option>
 							<option>Finanace</option>
 							<option>IT</option>
+							<option>Services</option>
+							<option>Government</option>
 
 						</select></td>
 					</tr>
@@ -39,8 +41,10 @@ if(! isset($_SESSION['is_company_logged_in'])) // Backdoor Entry Protaction Code
 						<td>Qua</td>
 						<td><select class="input" name="min_qua">
 							<option>Select</option>
-							<option>Gra</option>
-							<option>Post-Gra</option>
+							<option>Under Graduate</option>
+							<option>Graduate</option>
+							<option>Post Graduate</option>
+							<option>Ph. D.</option>
 
 						</select></td>
 					</tr>
