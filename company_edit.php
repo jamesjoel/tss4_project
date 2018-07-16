@@ -4,7 +4,7 @@ include('header.php');
 
 if(! isset($_SESSION['is_company_logged_in'])) // Backdoor Entry Protaction Code
 {
-	header("location:employee_login.php");
+	header("location:company_login.php");
 }
 
 $cid = $_SESSION['cid'];

@@ -2,7 +2,7 @@
 include('db.php');
 include('header.php');
 
-$que = "SELECT * FROM jobs LEFT JOIN company ON jobs.cid = company.id ORDER BY jobs.id DESC";
+$que = "SELECT * FROM jobs LEFT JOIN company ON jobs.cid = company.id  WHERE jobs.status = 1 ORDER BY jobs.id DESC";
 $result = mysqli_query($con, $que);
 
 
