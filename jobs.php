@@ -37,7 +37,7 @@ $result = mysqli_query($con, $que);
 							<Td><?php echo $data['job_title'];?></Td>
 							<Td><?php echo $data['salary'];?></Td>
 							<Td><?php echo $data['vacancy'];?></Td>
-							<td><a href="#" class="edit">Edit</a></td>
+							<td><a href="create_job.php?key=<?php echo $data['id'];?>" class="edit">Edit</a></td>
 							<td><a href="job_delete.php?key=<?php echo $data['id'] ?>" class="delete">Delete</a></td>
 							<?php
 							if($data['status']==1)
