@@ -1,18 +1,21 @@
 <?php
 include('db.php');
+
 if(!isset($_SESSION['is_employee_logged_in']))
 {
 	$_SESSION['msg']="You are not Logged in, for apply this job please Login First....!";
+	// print_r($_SESSION);
 	header("location:employee_login.php");
 
 }
+$jid = $_GET['key'];
 include('header.php');
 ?>
 <div id="right-content">
 	<h3>Apply For the Job</h3>
 	<div id="login-box">
 		<form action="apply_save.php" method="post" enctype="multipart/form-data">
-			
+		<input type="hidden" name="jid" value="<?php echo $jid; ?>">	
 		<table id="tab" align="center">
 			<tr>
 				<td>Cover Message</td>

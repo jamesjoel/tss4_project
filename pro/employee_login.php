@@ -1,7 +1,7 @@
 <?php
 include('db.php');	
+// print_r($_SESSION);die;
 include('header.php');
-
 ?>	
 		<div id="right-content">
 			<h3>Employee Login Here</h3>

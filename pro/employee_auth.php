@@ -4,6 +4,7 @@ include('db.php');
 // die;
 $u=$_POST['username'];
 $p=$_POST['pass'];
+$p = md5($p);
 $que="SELECT * FROM employee WHERE username='$u'";
 $result=mysqli_query($con, $que);
 

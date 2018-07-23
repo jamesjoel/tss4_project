@@ -2,7 +2,7 @@
 include('db.php');
 include('header.php');
 
-$que = "SELECT * FROM jobs LEFT JOIN company ON jobs.cid = company.id  WHERE jobs.status = 1 ORDER BY jobs.id DESC";
+$que = "SELECT *, jobs.id AS jid FROM jobs LEFT JOIN company ON jobs.cid = company.id  WHERE jobs.status = 1 ORDER BY jobs.id DESC";
 $result = mysqli_query($con, $que);
 
 
@@ -22,8 +22,7 @@ $result = mysqli_query($con, $que);
 						<span><?php echo $data['skills'];?></span>
 					</div>
 					<div class="right-job">
-						<a href="apply.php">Apply</a>
-					</div>
+						<a href="apply.php?key=<?php echo $data['jid'] ?>">Apply</a> </div>
 				</div>
 			<?php
 			}
