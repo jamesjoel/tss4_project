@@ -6,6 +6,7 @@ $url = $_SERVER['PHP_SELF'];
 <head>
 	<title>My Jobs</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <body>
 <div id="header">
