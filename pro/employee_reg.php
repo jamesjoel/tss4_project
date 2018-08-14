@@ -12,8 +12,16 @@ include('header.php');
 			var e = $("#add").val();
 			var f = $("#city").val();
 			var g = $("#contact").val();
+
+
+
+
 			var h = $("#male").is(":checked");
 			var i = $("#female").is(":checked");
+
+
+
+
 
 			var check_val=true;
 
@@ -96,7 +104,7 @@ include('header.php');
 			else
 			{
 				$("#contact_msg").html("");
-				if(isNaN(g)==true)
+				if(isNaN(g)==true) // isNotaNumber
 				{
 					check_val=false;
 					$("#contact_msg").html("Insert Numbers Only");
